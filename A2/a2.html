@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>Tap Tap Bug</title>
+		<link rel="stylesheet" type="text/css" href="a2.css" />
+		<script src="a2.js"></script>
+	</head>	
+	<body onload="loadLevel();loadScore()">
+		<div id="startpage">
+			<br><br><br><br>
+			<p>Level 
+			<input id="level1" type="radio" name="level" value="1" checked onchange = "loadLevel();loadScore()">1
+			<input id="level2" type="radio" name="level" value="2" onchange = "loadLevel();loadScore()">2
+			</p>
+			<button id="startbutton" onclick="initialSet();canvasInit()">Start</button>
+			<p id = "highscore"></p>
+		</div>
+	</body>	
+</html>
